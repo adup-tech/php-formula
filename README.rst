@@ -429,6 +429,11 @@ Configures the hhvm repo for debian/ubuntu
 
 Manages the php-hhvm service.
 
+``php.ng.igbinary``
+------------------
+
+Installs the php-igbinary package.
+
 ``php.ng.imagick``
 ------------------
 
@@ -497,6 +502,13 @@ Disabled on opensuse need server:php:extensions repo
 Installs the php-memcached package.
 Disabled on opensuse need server:php:extensions repo
 
+``php.ng.module``
+--------------------
+
+Calls ``php.ng.<name>`` for each entry in ``php:ng:modules`` if available, or
+try to install the matching packages that can be set via from
+``php:ng:lookup:pkgs``
+
 ``php.ng.mongo``
 --------------------
 
@@ -506,6 +518,11 @@ Installs the php-mongo package.
 --------------------
 
 Installs the php-mongodb package.
+
+``php.ng.msgpack``
+--------------------
+
+Installs the php-msgpack package.
 
 ``php.ng.mysql``
 ----------------
