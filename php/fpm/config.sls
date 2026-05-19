@@ -49,7 +49,7 @@ php_fpm_conf_config_{{ version }}:
         - user: {{ php.lookup.fpm.user }}
         - group: {{ php.lookup.fpm.group }}
         - file_mode: 755
-        - make_dirs: True
+        - makedirs: True
   {%- endfor %}
 {%- else %}
 
@@ -76,5 +76,5 @@ php_fpm_conf_config:
         - user: {{ php.lookup.fpm.user }}
         - group: {{ php.lookup.fpm.group }}
         - file_mode: 755
-        - make_dirs: True
+        - makedirs: True
 {%- endif %}
